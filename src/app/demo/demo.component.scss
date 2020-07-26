@@ -1,0 +1,48 @@
+@import "../../assets/scss/variable.scss";
+@import "../../assets/scss/mixins.scss";
+@import "../../assets/scss/operators.scss";
+
+ul {
+    li {
+        // @include reset-list
+        color: $color-red;
+    }
+}
+
+.div-left {
+    @include flot-postion($property: float, $direction: left);
+}
+
+.div-right {
+    @include flot-postion($property: float, $direction: right);
+}
+
+.message {
+    border: 5px solid #ccc;
+    padding: 10px;
+    color: #333;
+    margin: 10px;
+}
+
+.success {
+    @extend .message;
+    border-color: $color-green;
+}
+
+.error {
+    @extend .message;
+    border-color: $color-red;
+}
+
+.warning {
+    @extend .message;
+    border-color: $color-yellow;
+}
+
+// .warn-style{
+//     @warn "Property must be either left or right.";
+// }
+
+// .error-style{
+//     @error "Property must be either left or right.";
+// }

@@ -1,0 +1,86 @@
+$columns: 5;
+
+@for $i from 1 through $columns {
+    .columns-#{$i} {
+        width: (100% / $i);
+    }
+}
+
+
+// .columns-1 {
+//     width: 100%; 
+// }
+
+// .columns-2 {
+//     width: 50%; 
+// }
+
+// .columns-3 {
+//     width: 33.33333%; 
+// }
+
+// .columns-4 {
+//     width: 25%; 
+// }
+
+// .columns-5 {
+//     width: 20%; 
+// }
+
+
+$themeColours: (
+    "pink": #DC51AC,
+    "red": #D64651,
+    "orange": #E55937,
+);
+
+@each $themeColour, $i in $themeColours {
+    body {
+        &.#{$themeColour} {
+            background-color: $i;
+        }	
+    }
+}
+
+
+// body.pink {
+//     background-color: #DC51AC; 
+// }
+
+// body.red {
+//     background-color: #D64651; 
+// }
+
+// body.orange {
+//     background-color: #E55937; 
+// }
+
+$count: 0;
+
+@while $count < 5 {
+    .length-#{$count} {
+        width: (10 * $count) + px;
+    }
+
+    $count: $count + 1;
+}
+
+// .length-0 {
+//     width: 0px; 
+// }
+
+// .length-1 {
+//     width: 10px; 
+// }
+
+// .length-2 {
+//     width: 20px; 
+// }
+
+// .length-3 {
+//     width: 30px; 
+// }
+
+// .length-4 {
+//     width: 40px; 
+// }
