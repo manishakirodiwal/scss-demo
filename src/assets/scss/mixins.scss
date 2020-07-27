@@ -39,5 +39,17 @@
   }
   
   .next {
-    @include triangle(5px, black, right);
+    @include triangle(50px, lightblue, right);
+  }
+
+  .previous {
+    @include triangle(25px, pink, left);
+  }
+  
+  .up {
+    @include triangle(75px, lime, up);
+  }
+  
+  .down {
+    @include triangle(85px, cyan, down);
   }

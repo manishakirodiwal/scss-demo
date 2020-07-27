@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+$themeColours: (
+    "pink": #DC51AC,
+    "red": #D64651,
+    "orange": #E55937,
+);
+
+@each $themeColour, $i in $themeColours {
+    body {
+        &.#{$themeColour} {
+            background-color: $i;
+        }	
+    }
+}
+
+
+// body.pink {
+//     background-color: #DC51AC; 
+// }
+
+// body.red {
+//     background-color: #D64651; 
+// }
+
+// body.orange {
+//     background-color: #E55937; 
+// }

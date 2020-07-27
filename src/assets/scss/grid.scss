@@ -28,32 +28,7 @@ $columns: 5;
 // }
 
 
-$themeColours: (
-    "pink": #DC51AC,
-    "red": #D64651,
-    "orange": #E55937,
-);
 
-@each $themeColour, $i in $themeColours {
-    body {
-        &.#{$themeColour} {
-            background-color: $i;
-        }	
-    }
-}
-
-
-// body.pink {
-//     background-color: #DC51AC; 
-// }
-
-// body.red {
-//     background-color: #D64651; 
-// }
-
-// body.orange {
-//     background-color: #E55937; 
-// }
 
 $count: 0;
 
